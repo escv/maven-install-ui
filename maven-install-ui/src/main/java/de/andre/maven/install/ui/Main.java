@@ -5,9 +5,10 @@
  */
 
 package de.andre.maven.install.ui;
+
 /**
- *
- * @author FOX0ILN
+ * Bootstraps the Swing Dialog.
+ * @author Andre Albert
  */
 public class Main {
     

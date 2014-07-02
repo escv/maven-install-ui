@@ -21,8 +21,8 @@ import org.apache.maven.shared.invoker.InvocationRequest;
 import org.apache.maven.shared.invoker.Invoker;
 
 /**
- *
- * @author FOX0ILN
+ * Created with Netbeans Swing UI Design builder.
+ * @author Andre Albert
  */
 public class InstallLibraryDialog extends javax.swing.JDialog {
 
