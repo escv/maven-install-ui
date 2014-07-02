@@ -43,6 +43,7 @@ public class InstallLibraryDialog extends javax.swing.JDialog {
         initComponents();
 
         // Close the dialog when Esc is pressed
+        setTitle("Install .jar Library");
         String cancelName = "cancel";
         InputMap inputMap = getRootPane().getInputMap(JComponent.WHEN_ANCESTOR_OF_FOCUSED_COMPONENT);
         inputMap.put(KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0), cancelName);
