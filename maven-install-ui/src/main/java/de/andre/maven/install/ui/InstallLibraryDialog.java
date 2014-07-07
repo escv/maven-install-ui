@@ -6,6 +6,7 @@
 
 package de.andre.maven.install.ui;
 
+import java.awt.TrayIcon;
 import java.awt.event.ActionEvent;
 import java.awt.event.KeyEvent;
 import java.util.Collections;
@@ -14,6 +15,7 @@ import javax.swing.ActionMap;
 import javax.swing.InputMap;
 import javax.swing.JComponent;
 import javax.swing.JFileChooser;
+import javax.swing.JOptionPane;
 import javax.swing.KeyStroke;
 import org.apache.maven.shared.invoker.DefaultInvocationRequest;
 import org.apache.maven.shared.invoker.DefaultInvoker;
@@ -179,8 +181,9 @@ public class InstallLibraryDialog extends javax.swing.JDialog {
         Invoker invoker = new DefaultInvoker();
         try {
             invoker.execute( req );
+            JOptionPane.showMessageDialog(null, "Library installed");
         } catch (Exception e) {
-            
+            JOptionPane.showMessageDialog(null, "Library could not be installed", "Install Error", JOptionPane.ERROR_MESSAGE);
         }
     }//GEN-LAST:event_okButtonActionPerformed
 
